@@ -2,8 +2,6 @@
 
 This repository is the plugin marketplace for aligned.tax, HMRC-recognised bridging software for Making Tax Digital for Income Tax in the UK. It is published by Aligned Logic Ltd.
 
-> **Limited release.** The aligned.tax connector is not open to everyone yet. You can install the plugin, but it may not connect to your aligned.tax account until access opens more widely. If it does not connect, keep using the aligned.tax app as normal.
-
 ## Plugins
 
 | Plugin | What it does |

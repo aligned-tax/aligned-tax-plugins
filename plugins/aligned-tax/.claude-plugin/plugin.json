@@ -2,7 +2,7 @@
   "name": "aligned-tax",
   "displayName": "aligned.tax",
   "version": "1.7.6",
-  "description": "Check your Making Tax Digital for Income Tax position with HMRC in Claude: your HMRC connection, which quarterly updates are due and what was sent. Filing happens in the aligned.tax app, with a preview and your confirmation before anything is sent.",
+  "description": "Know where you stand with Making Tax Digital for Income Tax: what is due and when, what was sent to HMRC, and how fresh your HMRC data is. Turn receipts and agent statements into draft records, for individuals and accounting practices. Filing stays in aligned.tax, with a preview and your confirmation.",
   "author": {
     "name": "Aligned Logic Ltd",
     "email": "hello@aligned.tax",
