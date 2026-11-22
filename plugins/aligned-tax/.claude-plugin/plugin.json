@@ -1,0 +1,26 @@
+{
+  "name": "aligned-tax",
+  "displayName": "aligned.tax",
+  "version": "1.7.6",
+  "description": "Check your Making Tax Digital for Income Tax position with HMRC in Claude: your HMRC connection, which quarterly updates are due and what was sent. Filing happens in the aligned.tax app, with a preview and your confirmation before anything is sent.",
+  "author": {
+    "name": "Aligned Logic Ltd",
+    "email": "hello@aligned.tax",
+    "url": "https://aligned.tax"
+  },
+  "homepage": "https://aligned.tax/help",
+  "repository": "https://github.com/aligned-tax/aligned-tax-plugins",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "hmrc",
+    "making-tax-digital",
+    "mtd",
+    "income-tax",
+    "uk"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://aligned.tax/help",
+  "supportUrl": "https://aligned.tax/support",
+  "privacyPolicyUrl": "https://aligned.tax/privacy",
+  "termsOfServiceUrl": "https://aligned.tax/terms"
+}

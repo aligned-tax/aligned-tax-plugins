@@ -1,0 +1,17 @@
+{
+  "name": "aligned-tax-plugins",
+  "description": "Plugins from aligned.tax, HMRC-recognised bridging software for Making Tax Digital for Income Tax.",
+  "owner": {
+    "name": "Aligned Logic Ltd",
+    "email": "hello@aligned.tax",
+    "url": "https://aligned.tax"
+  },
+  "plugins": [
+    {
+      "name": "aligned-tax",
+      "source": "./plugins/aligned-tax",
+      "category": "finance",
+      "tags": ["hmrc", "making-tax-digital", "income-tax", "uk"]
+    }
+  ]
+}
