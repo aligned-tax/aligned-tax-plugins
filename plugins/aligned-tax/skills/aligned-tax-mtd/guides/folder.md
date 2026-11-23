@@ -107,7 +107,7 @@ Before each call, check: chunk frozen; `requestId` new, or an exact retry; one b
 
 ## 9. Finishing
 
-Report exactly from the results: how many were confirmed, how many were held as possible duplicates, how many are still drafts needing details (give the link from `getAppLink`, target `transactions`, to finish them), and everything not sent, with the reason. If you can write files where the documents are, save the run record there as `aligned-tax-run-<run id>.md`: one line per row with its `requestId`, source files, page and line, payment group and state; otherwise show it as a table. Then: "Keep the original documents: HMRC expects records to be kept. aligned.tax cannot store them from this chat yet."
+End with the standard ending in SKILL.md ("Evidence and endings"): "What changed", "Assumptions I made", "Still needs you" and one next step. "Still needs you" is this run's "Needs you" list, not a second one. A bank payment that does not match its documents: [references/matching-payments.md](../references/matching-payments.md). Report exactly from the results: how many were confirmed, how many were held as possible duplicates, how many are still drafts needing details (give the link from `getAppLink`, target `transactions`, to finish them), and everything not sent, with the reason. If you can write files where the documents are, save the run record there as `aligned-tax-run-<run id>.md`: one line per row with its `requestId`, source files, page and line, payment group and state; otherwise show it as a table. Then: "Keep the original documents: HMRC expects records to be kept. aligned.tax cannot store them from this chat yet."
 
 ## Turns to avoid
 

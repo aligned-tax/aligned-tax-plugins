@@ -1,6 +1,6 @@
 # aligned.tax for Claude
 
-Know where you stand with Making Tax Digital for Income Tax, in plain English. aligned.tax is HMRC-recognised bridging software, built for individuals and for accounting practices. This plugin connects Claude to your aligned.tax account and teaches it to help with your MTD records, safely.
+For UK sole traders and landlords on Making Tax Digital for Income Tax, and the accountants and bookkeepers who look after them. Know where you stand, in plain English: what is due, what was sent and what still needs doing. aligned.tax is HMRC-recognised bridging software, and this plugin connects Claude to your aligned.tax account and teaches it to help with your MTD records, safely.
 
 ## What it does
 
@@ -8,7 +8,7 @@ Know where you stand with Making Tax Digital for Income Tax, in plain English. a
 - Shows what was sent to HMRC and when.
 - Tells you how fresh your saved HMRC data is, with a one-tap link to refresh it in aligned.tax.
 - Turns a folder of receipts, invoices, letting agent statements and bank statements into draft records. Each letting agent statement is checked to add up to the penny before anything is saved, and nothing changes until you say yes to the exact list.
-- Works for practices too: client lists, client-by-client records and quarterly updates, with roles such as main agent and supporting agent respected.
+- Works for accountants and bookkeepers too: your client list, each client's records and quarterly updates, with every team member's role respected, from bookkeeper to main agent.
 - Answers questions about MTD rules from HMRC guidance, with the page to check, and about how aligned.tax works.
 - Filing stays in aligned.tax, where you see a preview and confirm before anything goes to HMRC.
 
@@ -31,18 +31,14 @@ The plugin runs no code on your computer: no hooks, scripts or local servers. Th
 
 ## Getting started
 
-1. Install the plugin. In Claude Code, run:
-
-   ```
-   /plugin install aligned-tax --marketplace aligned-tax/aligned-tax-plugins
-   ```
-
-   On claude.ai, add it from **Customize > Plugins**.
-2. Open the plugin's **Connectors** tab (on claude.ai or in Cowork), or run `/mcp` in Claude Code, and connect **aligned.tax**.
-3. Sign in with your aligned.tax account, check the permissions on the consent page and choose **Authorise access**.
+1. In Claude on the web or the desktop app, open **Customize**, then **Plugins**, search for **aligned.tax** and choose **Add**.
+2. Open the plugin's **Connectors** tab and choose **Connect** next to **aligned.tax**.
+3. Sign in with your aligned.tax account, check what Claude may do on the consent page and choose **Authorise access**.
 4. Ask something like "Which MTD updates do I have due?"
 
-You need an aligned.tax account with HMRC connected.
+You need an aligned.tax account. Connect HMRC in aligned.tax so Claude can see your deadlines and what was sent.
+
+**Using Claude Code?** Run `/plugin install aligned-tax --marketplace aligned-tax/aligned-tax-plugins`, then `/mcp` to connect and sign in.
 
 ## Support
 

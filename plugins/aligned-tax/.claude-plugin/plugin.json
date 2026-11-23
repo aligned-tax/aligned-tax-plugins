@@ -1,8 +1,8 @@
 {
   "name": "aligned-tax",
   "displayName": "aligned.tax",
-  "version": "1.7.6",
-  "description": "Know where you stand with Making Tax Digital for Income Tax: what is due and when, what was sent to HMRC, and how fresh your HMRC data is. Turn receipts and agent statements into draft records, for individuals and accounting practices. Filing stays in aligned.tax, with a preview and your confirmation.",
+  "version": "1.7.7",
+  "description": "For UK sole traders, landlords, accountants and bookkeepers on Making Tax Digital for Income Tax: know what is due and when, what was sent to HMRC and how fresh your HMRC data is, and turn receipts and statements into checked draft records. Filing stays in aligned.tax, with a preview and your confirmation.",
   "author": {
     "name": "Aligned Logic Ltd",
     "email": "hello@aligned.tax",

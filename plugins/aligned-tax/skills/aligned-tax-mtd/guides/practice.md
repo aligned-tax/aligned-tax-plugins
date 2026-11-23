@@ -33,6 +33,8 @@ A practice member's role limits what they can do, from lowest to highest: Review
 
 **A client's books.** Where Books is on for the client, the same tools as "Your books" in [guides/individual.md](individual.md) answer from the client's saved books, with the client named: `getBooksReports` or `getBooksHome` for profit so far, `listInvoices` for who owes them money, `getBankStatements` and `getBankStatementReview` for statements and what is left to sort, `listContacts`, `listMileageJourneys` and `listBooksDocuments`. `saveInvoiceDraft` and `saveMileageJourney` save drafts only (Bookkeeper or above) and return the app link. Bank numbers arrive masked: never ask for them. Sorting statement lines, issuing and sending invoices and recording payments are done in aligned.tax: give the link from `getAppLink` (targets `books`, `invoices`, `invoiceDraft`, `mileage`, `statements`, `statement`, `reports`, `vatSettings`). Sending VAT returns is not open to the public yet.
 
+**Reviewing the practice's clients.** Before calling a problem widespread, check representative examples (read the records of a few clients it affects). Group findings that share one cause, and list the most consequential first. Each finding names the client and the record or document it rests on.
+
 **Keep a note.** `recordClientObservation` records something about the client for the practice. Say what you will record first.
 
 **A client's spreadsheet.** `uploadClientRecordsFile` stores an XLSX against one exact client obligation; it does not file it. It needs the file's raw bytes (`fileData`, base64) and exact `fileSize`, and a new `submissionKey` per file.

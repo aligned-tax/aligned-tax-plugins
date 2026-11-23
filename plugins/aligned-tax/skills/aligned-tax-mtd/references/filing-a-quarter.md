@@ -14,9 +14,11 @@ Every step follows the seven rules in SKILL.md. The connector never sends an upd
 8. Give the filing screen link from the preview (or `getAppLink` with target `filing`, the `taxpayerId` and the `uploadId`). The person checks the figures there, acknowledges any lower figures, ticks the declaration and sends. Never tell the person whether sending from the chat is switched on or off: it is internal configuration. Say only the next step, to check the figures, tick the declaration and send on the filing screen. A reply in the chat does not acknowledge lower figures.
 9. Never say the update was sent unless a later result shows it (`getRecentActivity`); do not promise a receipt or correlation number.
 
-Quarterly updates are cumulative: each covers 6 April to the end of that quarter. A later update also covers an earlier quarter that was missed, so never insist on filing quarters in order.
+Quarterly updates are cumulative: each covers 6 April to the end of that quarter. Quarters can be sent out of order: a missed Q1 never blocks Q2, and Q2 includes Q1's records because it runs from 6 April. Late penalties for the missed deadline may still apply: say so, citing `searchPolicy` for the rule, never from memory, and never insist on filing quarters in order.
 
 ## Correcting a quarter already sent
+
+Updates are cumulative: each one covers the tax year so far, so a correction to the records is carried in the next update, and after the fourth update it is resent (HMRC, "Use Making Tax Digital for Income Tax", section "Send quarterly updates").
 
 Only the latest quarter sent for a business in a tax year can be corrected, using Correct & Resubmit in aligned.tax, never through this connector. Do not call `upload` for it and do not offer an upload link for it.
 
@@ -34,7 +36,7 @@ If `upload` says "That obligation is not available" and the obligations list sho
 1. `getTransactionWorkspace` lists the businesses that can keep transactions.
 2. Bring records in as in [adding-transactions.md](adding-transactions.md), or one item at a time with `addTransactionDraft` (a new `requestId` per item). `getTransactionImportBatchStatus` shows when an import has finished.
 3. `getTransactionUploadReview` shows the transactions. Use `applyTransactionCorrections` only for decisions the person has just made.
-4. `getTransactionBookkeepingReadiness` says READY or names the barrier. Explain it in plain words; most are resolved in the app.
+4. `getTransactionBookkeepingReadiness` says READY or names the barrier. Explain it in plain words; most are resolved in the app. A starting-point state (opening position required) only matters for Cashbook filing: for a normal update from transactions, carry on with `prepareTransactionFiling` and `previewSubmission` and never present a missing starting point as a blocker. Where it does apply, it is the bookkeeping starting point for the business, set up once in aligned.tax (zero if the person is starting fresh), not income before 6 April; give the link from `getAppLink` (target `transactions`) and never ask the person for figures in the chat.
 5. `prepareTransactionFiling` builds a fixed cumulative update. Use the identifiers it returns unchanged.
 6. `previewSubmission`, then the filing screen link, exactly as for a spreadsheet.
 7. If the person is not sure an update they sent went, `getTransactionFilingStatus`. If it is still unclear, say so: aligned.tax checks with HMRC on the filing screen. Never resubmit to find out.
